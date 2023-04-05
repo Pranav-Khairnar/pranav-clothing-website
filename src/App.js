@@ -4,8 +4,8 @@ import {Routes, Route} from 'react-router-dom'
 
 import Navigation from './components/routes/navigation/navigation-component'
 import HomePage from './components/routes/home/homepage-component'
-import SignIn from './components/sign-in/sign-in-component'
 import './App.css'
+import Authentication from './components/authentication/authentication-component'
 
 
 const Shop = () => {
@@ -22,7 +22,7 @@ const App = () => {
           <Route path='/' element={<Navigation />}>
               <Route index element={<HomePage/>}/>
               <Route path='shop' element={<Shop />}/>
-              <Route path='sign-in' element={<SignIn />}/>
+              <Route path='auth' element={<Authentication />}/>
           </Route>
       </Routes>
     )
